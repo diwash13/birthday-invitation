@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kairav's 2nd Birthday</title>
+
+    <meta name="description" content="Join us for Kairav's 2nd Birthday!" />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ========================================================= -->
+    <!-- HERO -->
+    <!-- ========================================================= -->
+
+    <header class="hero">
+      <div class="hero__sky"></div>
+
+      <div class="hero__cloud hero__cloud--1"></div>
+      <div class="hero__cloud hero__cloud--2"></div>
+      <div class="hero__cloud hero__cloud--3"></div>
+
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__episode">THIS EPISODE OF</p>
+
+          <h1 class="hero__logo">BLUEY</h1>
+
+          <p class="hero__called">IS CALLED</p>
+
+          <h2 class="hero__title">
+            Kairav's
+
+            <span>2nd Birthday</span>
+          </h2>
+
+          <p class="hero__subtitle">
+            Come celebrate a day filled with fun, laughter, games, cake and
+            Bluey adventures!
+          </p>
+
+          <div class="hero__buttons">
+            <a href="#rsvp" class="button button--primary"> 🎈 RSVP </a>
+
+            <a href="#gallery" class="button button--secondary">
+              📸 See Photos
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__characters">
+          <img
+            class="hero__characters"
+            src="images/characters/hero.png"
+            alt="Bluey, Kairav and Bingo"
+          />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ========================================================= -->
+      <!-- COUNTDOWN -->
+      <!-- ========================================================= -->
+
+      <section class="countdown">
+        <div class="container">
+          <h2>The Big Day Is Coming!</h2>
+
+          <div class="countdown__cards">
+            <div class="countdown__card">
+              <span id="days">--</span>
+
+              <small>Days</small>
+            </div>
+
+            <div class="countdown__card">
+              <span id="hours">--</span>
+
+              <small>Hours</small>
+            </div>
+
+            <div class="countdown__card">
+              <span id="minutes">--</span>
+
+              <small>Minutes</small>
+            </div>
+
+            <div class="countdown__card">
+              <span id="seconds">--</span>
+
+              <small>Seconds</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- ABOUT -->
+      <!-- ========================================================= -->
+
+      <section class="about">
+        <div class="container">
+          <h2>Meet Today's Birthday Boy!</h2>
+
+          <p class="about__intro">
+            Kairav is turning TWO and can't wait to celebrate with all of his
+            favorite people!
+          </p>
+
+          <div class="about__facts">
+            <div class="about__fact">🚜 Loves Trucks</div>
+
+            <div class="about__fact">🍎 Loves Apples</div>
+
+            <div class="about__fact">🫧 Loves Bubbles</div>
+
+            <div class="about__fact">🐶 Loves Bluey</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- GALLERY -->
+      <!-- ========================================================= -->
+
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <h2>Favorite Memories</h2>
+
+          <div id="gallery-grid" class="gallery__grid"></div>
+
+          <div class="gallery__actions">
+            <button id="show-more" class="button button--secondary">
+              📸 See More Memories
+            </button>
+          </div>
+
+          <div class="gallery__footer">
+            <p>We can't wait to make even more memories together!</p>
+
+            <a href="#rsvp" class="button button--primary"> 🎈 RSVP Now </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- INVITATION -->
+      <!-- ========================================================= -->
+
+      <section class="invitation">
+        <div class="container">
+          <h2>Official Invitation</h2>
+
+          <img
+            src="images/bluey.png"
+            alt="Birthday Invitation"
+            class="invitation__image"
+          />
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- DETAILS -->
+      <!-- ========================================================= -->
+
+      <section class="details">
+        <div class="container">
+          <h2>Party Details</h2>
+
+          <div class="details__cards">
+            <article class="details__card">
+              <div class="details__icon">📅</div>
+
+              <h3>Date</h3>
+
+              <p id="event-date"></p>
+            </article>
+
+            <article class="details__card">
+              <div class="details__icon">🕛</div>
+
+              <h3>Time</h3>
+
+              <p id="event-time"></p>
+            </article>
+
+            <article class="details__card">
+              <div class="details__icon">📍</div>
+
+              <h3>Location</h3>
+
+              <p id="event-address"></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- MAP -->
+      <!-- ========================================================= -->
+
+      <section class="map">
+        <div class="container">
+          <h2>Find Us</h2>
+
+          <div id="map-frame">
+            <!-- Google Map inserted here -->
+          </div>
+
+          <a id="maps-link" target="_blank" class="button button--secondary">
+            Open in Google Maps
+          </a>
+        </div>
+      </section>
+
+      <!-- ========================================================= -->
+      <!-- RSVP -->
+      <!-- ========================================================= -->
+
+      <section id="rsvp" class="rsvp">
+        <div class="container">
+          <h2>Will You Join Us?</h2>
+
+          <form id="rsvp-form">
+            <div class="form-group">
+              <label> Name * </label>
+
+              <input id="name" required type="text" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label> Adults </label>
+
+                <input id="adults" min="0" value="1" type="number" />
+              </div>
+
+              <div class="form-group">
+                <label> Kids </label>
+
+                <input id="kids" min="0" value="0" type="number" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label> Food Restrictions </label>
+
+              <input id="food" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label> Message for Kairav </label>
+
+              <textarea id="message" rows="5"></textarea>
+            </div>
+
+            <div class="rsvp__actions">
+              <button
+                id="coming-yes"
+                class="button button--primary"
+                type="button"
+              >
+                🎈 Wackadoo! We're Coming!
+              </button>
+
+              <button
+                id="coming-no"
+                class="button button--secondary"
+                type="button"
+              >
+                💙 Oh Biscuits... We Can't Make It
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Made with ❤️ for Kairav's 2nd Birthday</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
